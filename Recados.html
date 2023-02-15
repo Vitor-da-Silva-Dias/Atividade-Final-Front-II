@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./Estilos-2.css">
+    <title>Recados</title>
+</head>
+
+<body class="bg-primary-subtle">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-danger mt-1 fw-bold" id="botao-sair" onclick="logout()">SAIR</button>
+                    </div>
+                    <h1>Meus recados</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <div class="modal fade" id="save-errand" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Adicionar Recado</h1>
+                              <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                <input class="form-control border-dark"  id="texto-1" placeholder="Descrição" type="text" required><br>
+                                <input class="form-control border-dark"  id="texto-2" placeholder="Detalhamento" type="text" required>
+                            </div>
+                            <div class="modal-footer">
+                              <button id="botao-salvar" type="submit" class="btn btn-primary fw-bold update-list">SALVAR</button>
+                            </div>
+                        </form>
+                          </div>
+                        </div>
+                      </div>
+                    <div>
+                        <button class="btn btn btn-primary text-light rounded-5 update-list" data-bs-toggle="modal" data-bs-target="#save-errand">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
+                        </button>
+                            
+                    </div>
+                    <br>
+                    <hr>
+                    <table class="col-12">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Descrição</th>
+                                <th>Detalhamento</td>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+            
+                        </tbody>
+                    </table>
+                </main>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="./bootstrap.min.js"></script>
+    <script src="./Recados.js"></script>
+</body>
+
+</html>

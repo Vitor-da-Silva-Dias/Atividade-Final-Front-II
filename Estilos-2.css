@@ -1,0 +1,71 @@
+#botao-sair:hover{
+    background-color: #e36767;
+    color: #000000;
+}
+
+.update-list:hover{
+    background-color: #5ab6ec;
+    color: #000000;
+}
+
+.modal-content{
+    animation: login 2s infinite;
+}
+
+table,tr,
+th, td{
+    border: solid 2px;
+    border-collapse: collapse;
+    text-align: center;
+    animation: table 1s infinite;
+}    
+
+.botao-apagar{
+    background-color: #b60b0b;
+    color: #ffffff;
+}
+
+.botao-apagar:hover{
+    background-color: #df7a7a;
+    color: #000000;
+    cursor: pointer;
+}
+
+.botao-editar{
+    background-color: #03440b;
+    color: #ffffff;
+}
+
+.botao-editar:hover{
+    background-color:  #44ba52;
+    color: #000000;
+    cursor: pointer;
+}
+
+@keyframes table {
+    0%{
+        background-color: #FFC107;
+    }
+    50%{
+        background-color: #CFE2FF;
+    }
+    100%{
+        background-color: #FFC107;
+
+    }
+}
+
+@keyframes login{
+    0%{
+        background-color: #ffffff;
+        color: #000000;
+    }
+    50%{
+        background-color: #000000;
+        color: #ffffff;
+    }
+    100%{
+        background-color: #ffffff;
+        color: #000000;
+    }
+}

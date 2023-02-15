@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./Estilos-1.css">
+    <title>Index</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row vh-100">
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex
+             justify-content-center align-items-center flex-column vh-100 image">
+                <div>
+                <h1 id="bem-vindo" class="text-white text-align-center">BEM VINDO</h1>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 bg-primary-subtle">
+                <div class="vh-100 form-login d-flex justify-content-center align-items-center flex-column">
+                    <div>
+                        <h1 style="text-align: center;">Entrar no sistema de recados</h1><br>
+                    </div>
+                    <div class="col-8">    
+                        <form id="login">
+                            <label for="email">E-mail: </label><br>
+                            <input class="caixa-texto col-12 form-control border-dark" placeholder="Digite seu e-mail" type="email" id="email">
+                           <br>
+                            <label for="Senha">Senha: </label><br>
+                            <input class="caixa-texto col-12 form-control border-dark" placeholder="Digite a senha" type="password" id="Senha">
+                            <br><br>
+                            <nav>
+                                <button id="button-login" type="submit" class="btn btn-success col-8 fw-bold">ENTRAR</button>                                <br><br>
+                                <button id="button-register" type="button" class="btn btn-danger col-8 fw-bold"
+                                 data-bs-toggle="modal" data-bs-target = "#register-modal">CADASTRAR</button>
+                            </nav>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-3" id="exampleModalLabel">Novo Usuário</h1>
+                                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <form id="save">
+                                        <label for="e-mail">E-mail: </label><br>
+                                        <input class="caixa-texto form-control border-dark" placeholder="Digite seu e-mail" type="email"
+                                            id="e-mail" required>
+                                        <br>
+                                        <label for="senha">Senha: </label><br>
+                                        <input class="caixa-texto form-control border-dark" placeholder="Crie uma senha" type="password"
+                                            id="senha" required>
+                                        <br>
+                                        <label for="c-senha">Confirmar Senha: </label><br>
+                                        <input class="caixa-texto form-control border-dark" placeholder="Repita a senha" type="password"
+                                            id="c-senha" required>
+                                        <br>
+                                        <nav>
+                                            <button id="button-save" type="submit" class="btn btn-primary col-8 fw-bold">CRIAR CONTA</button>                                        </nav>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap.min.js"></script>
+    <script src="./Home.js"></script>
+</body>
+
+</html>

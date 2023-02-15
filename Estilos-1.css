@@ -1,0 +1,47 @@
+#bem-vindo{
+    font-size: calc(1.525rem + 3vw);
+}
+
+
+.image{
+    background-image: url(./Espaço.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.modal-content{
+    animation: login 2s infinite;
+}
+
+nav{
+    text-align: center;
+}
+#button-login:hover{
+    background-color: #80f193;
+    color: #000000;
+}
+#button-register:hover{
+    background-color: #f16565;
+    color: #000000;
+}
+
+#button-save:hover{
+    background-color: #3395da;
+    color: #000000;
+}
+
+
+@keyframes login{
+    0%{
+        background-color: #ffffff;
+        color: #000000;
+    }
+    50%{
+        background-color: #000000;
+        color: #ffffff;
+    }
+    100%{
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
